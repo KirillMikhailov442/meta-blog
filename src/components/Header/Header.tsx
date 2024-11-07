@@ -89,7 +89,7 @@ const Header: FC = () => {
                   })}
                   href={'/author'}
                 >
-                  Pages
+                  Author
                 </Link>
               </li>
               <li>

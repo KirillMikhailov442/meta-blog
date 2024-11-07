@@ -119,7 +119,7 @@ const MobileNav: FC = () => {
                   })}
                   href={'/author'}
                 >
-                  Pages
+                  Author
                 </Link>
               </motion.li>
               <motion.li

@@ -1,0 +1,21 @@
+.tag {
+  display: inline-block;
+  padding: 8px 10px;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  font-weight: 500;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.blue {
+  background-color: var(--blue);
+  color: white;
+}
+
+.sky {
+  background-color: var(--blue-500);
+  color: var(--blue);
+}

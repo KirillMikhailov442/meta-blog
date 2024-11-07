@@ -1,0 +1,88 @@
+@import '@styles/vars.scss';
+
+.authorInfo {
+  background-color: var(--gray-50);
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+  margin-block: 1rem 4rem;
+}
+
+.container {
+  width: 670px;
+  text-align: center;
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: start;
+
+  &Description {
+    margin-block: 1.8rem;
+    line-height: 1.4;
+  }
+}
+
+.socialMedia li {
+  display: inline-block;
+}
+
+.socialMediaItem {
+  padding: 10px;
+  border-radius: 6px;
+  background-color: var(--gray-500);
+  color: var(--white);
+  margin-inline: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+.listOfPosts {
+  margin-block: 1rem 8rem;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: $laptop) {
+  .list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: calc($tablet - 100px)) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: $mobileL) {
+  .author {
+    flex-direction: column;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .socialMediaItem {
+    color: white;
+  }
+}

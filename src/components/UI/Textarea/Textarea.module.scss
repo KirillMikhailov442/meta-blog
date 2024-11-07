@@ -1,0 +1,20 @@
+.textarea {
+  resize: none;
+  padding: 14px 8px;
+  border-radius: 5px;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 0.9em;
+  border: none;
+  outline: none;
+}
+
+.default {
+  background-color: var(--gray-50);
+  color: var(--gray-300);
+}
+
+.outline {
+  background-color: transparent;
+  border: 1.6px solid var(--gray-200);
+}

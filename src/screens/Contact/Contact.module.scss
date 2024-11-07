@@ -1,0 +1,31 @@
+@import '@styles/mixins.scss';
+
+.container {
+  @include container;
+  max-width: 800px;
+  text-align: center;
+}
+
+.title {
+  margin-block: 1.6rem;
+}
+
+.form {
+  max-width: 360px;
+  padding: 2rem 1.6rem;
+  border: 1.5px solid var(--gray-250);
+  border-radius: 12px;
+  margin-block: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-inline: auto;
+
+  & > * {
+    height: 48px;
+  }
+}
+
+.textarea {
+  height: 130px;
+}
